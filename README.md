@@ -60,19 +60,19 @@ E.g. : srun -N4 -n 4 -p opteron --pty /bin/bash
 2. Compile the code using Make file
 V1 & V2:
 ---------
-$ make -f p3.Makefile lake
+make -f p3.Makefile lake
 V4:
 ---------
-$ make -f p3.Makefile lake-mpi
+make -f p3.Makefile lake-mpi
 
 3. To run the program 
 V1 & V2:
 --------
-$ ./lake <number of grid points> <number of pebbles> <end time> <number of threads>
+./lake <number of grid points> <number of pebbles> <end time> <number of threads>
 e.g:  ./lake 128 5 1.0 8
 V4:
 --------
-$ prun ./lake <number of grid points> <number of pebbles> <end time> <number of threads>
+prun ./lake <number of grid points> <number of pebbles> <end time> <number of threads>
 e.g:  prun ./lake 128 5 1.0 8
 
 Files submitted:
